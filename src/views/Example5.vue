@@ -46,7 +46,7 @@ const testStructure: IFieldStructure[] = [
     },
 ]
 
-const dataUrl = "/data.json"
+const dataUrl = import.meta.env.BASE_URL + "data.json"
 const store = useFormDataStore()
 onServerPrefetch(async () => {
     store.fetchFormData(dataUrl)

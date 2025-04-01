@@ -60,7 +60,7 @@ const testStructure: IFieldStructure[] = [
 ]
 
 const formAction = "/url.testFormFieldsGenerator.gov"
-const dataUrl = "/data.json"
+const dataUrl = import.meta.env.BASE_URL + "data.json"
 
 const errorWarning = (error: Error) => {
     alert(`

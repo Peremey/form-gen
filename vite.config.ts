@@ -12,6 +12,7 @@ export default defineConfig({
     vueDevTools(),
     //ssr()
   ],
+  base: "/form-gen/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
