@@ -1,0 +1,26 @@
+.loader {
+    --sz: 100%;
+    height: var(--sz);
+    aspect-ratio: 1/1;
+    transform-origin: center;
+    animation: loader-rotate 4s linear infinite;
+    --r: 8%;
+    div {
+        position: absolute;
+        top: calc(50% - var(--r));
+        left: calc(50% - var(--r));
+        aspect-ratio: 1/1;
+        height: calc(var(--r) * 2);
+        border-radius: 50%;
+        background-color: #ddd;
+        transform: rotateZ(calc(var(--i) * 45deg)) translateX(calc(50 / 24 * 100%));
+    }
+    @keyframes loader-rotate {
+        0% {
+            transform: rotateZ(0);
+        }
+        100% {
+            transform: rotateZ(359deg);
+        }
+    }
+}

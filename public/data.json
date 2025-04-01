@@ -1,0 +1,7 @@
+{
+    "lastname": "Иванов",
+    "firstname": "Иван",
+    "gender": "Мужской",
+    "checkAges": true,
+    "about": "Это кастомный блок."
+}

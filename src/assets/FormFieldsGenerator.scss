@@ -1,0 +1,63 @@
+._formBase {
+    $p-w: 10px;
+    padding: 5px $p-w;
+    &--field {
+        margin-bottom: 10px;
+        label {
+            display: block;
+            margin-bottom: 2px;
+        }
+        label._formBase--field-lcheck {
+            display: inline;
+            margin-bottom: 0;
+        }
+        &-reqiured {
+            color: Red;
+        }
+        input,
+        select,
+        textarea {
+            padding: 0.5em;
+        }
+        &-input,
+        textarea {
+            min-width: min(300px, calc(100% - 2 * #{$p-w}));
+        }
+    }
+    &--btns {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 2em;
+        padding: 20px;
+        padding-left: 0;
+        button {
+            padding: 10px;
+        }
+        &-submit {
+            display: flex;
+            gap: 1em;
+        }
+        &-loader {
+            display: flex;
+            align-items: center;
+            flex: 0 1 3em;
+            &.loader {
+                width: 2em;
+                height: 2em;
+            }
+        }
+    }
+}
+
+._formBaseLazy {
+    &--loader {
+        width: min(50px, 20vw);
+    }
+    &--error {
+        background-color: red;
+        color: White;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
